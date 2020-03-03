@@ -25,14 +25,17 @@ description: >- # this means to ignore newlines until "baseurl:"
   je développe avant tout pour le plaisir d'apprendre. 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: MrScriptX
-github_username:  MrScriptX
-linkedin:
-  - username: Dan Liebault
-    instance: dan-liebault-30739418b
-twitch:
-  - username: MrScriptX
-    instance: www.twitch.tv/mrscriptx
+
+minima:
+  social_links:
+    twitter: MrScriptX
+    github: MrScriptX
+    linkedin:
+    - username: Dan Liebault
+      instance: dan-liebault-30739418b
+    #twitch:
+    #- username: MrScriptX
+    #  instance: www.twitch.tv/mrscriptx
 
 # Build settings
 #theme: minima
