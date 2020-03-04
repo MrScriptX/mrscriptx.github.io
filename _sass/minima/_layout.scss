@@ -298,7 +298,10 @@
       display: block;
       padding: $spacing-unit / 4;
       border: 1px solid $brand-color-light;
-      &:hover { border-color: darken($brand-color-light, 10%) }
+      &:hover { 
+        border-color: darken($brand-color-light, 10%);
+        background-color:#1E88E5;
+      }
     }
   }
 }
