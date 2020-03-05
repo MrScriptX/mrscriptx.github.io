@@ -261,6 +261,8 @@
   h2 {
     @include relative-font-size(1.75);
 
+    font-weight: 500;
+
     @media screen and (min-width: $on-large) {
       @include relative-font-size(2);
     }
@@ -269,6 +271,8 @@
   h3 {
     @include relative-font-size(1.375);
 
+    font-weight: 500;
+
     @media screen and (min-width: $on-large) {
       @include relative-font-size(1.625);
     }
@@ -276,13 +280,19 @@
 
   h4 {
     @include relative-font-size(1.25);
+
+    font-weight: 500;
   }
 
   h5 {
     @include relative-font-size(1.125);
+
+    font-weight: 500;
   }
   h6 {
     @include relative-font-size(1.0625);
+
+    font-weight: 500;
   }
 }
 
