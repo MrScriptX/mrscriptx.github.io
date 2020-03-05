@@ -15,7 +15,3 @@ Mention spéciale à mon professeur de techno qui m'a fait découvrir RPGMaker e
 
 De base, j'apprecis enormement le C et le C++ qui ont été les mes deux premiers vrais langages de programmation. Beaucoup plus recement, j'ai appris le python, rust, C#, javascript, java, php, et x86asm.  
 Je connais également beaucoup de technologies diffèrente : Vulkan, .NET, NodeJS pour ne citer qu'eux.
-
-![image de profil][profile_pic]
-
-[profile_pic]: www.image.com
