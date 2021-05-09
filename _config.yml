@@ -20,8 +20,7 @@
 
 title: Le Domaine de Script
 description: >- # this means to ignore newlines until "baseurl:"
-  Étudiant en école d’ingénieur, passionné des nouvelles technologies, 
-  je développe avant tout pour le plaisir d'apprendre.
+  Étudiant en école d’ingénieur, je considère que l'intelligence c'est avant tout la volonté et le plaisir d'apprendre.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
