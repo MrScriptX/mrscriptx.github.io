@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Créer un moteur de rendu 3D"
-date:   2020-05-08 15:46:35 +0100
+date:   2021-05-09 22:32:00 +0100
 categories: vlog
 ---
 
