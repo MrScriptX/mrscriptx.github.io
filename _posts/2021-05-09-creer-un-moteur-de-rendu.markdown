@@ -2,7 +2,7 @@
 layout: post
 title:  "Créer un moteur de rendu 3D"
 date:   2021-05-09 22:32:00 +0100
-categories: vlog
+categories: devlog
 ---
 
 Je l'ai fait ! Enfin j'y suis arrivé. Après des centaines d'heures de code et de réflexions. Des pauses de plusieurs mois et des semaines intensives, je peux le dire : j'ai réalisé un moteur de rendu. Le chemin pour y arriver fut très long et très difficile, surtout pour un développeur junior comme moi. Laissez-moi vous raconter cette aventure.
@@ -16,7 +16,7 @@ J'aurais pu suivre un bête tutoriel pour construire mon moteur. Mais je pense q
 ## Conseils au débutant
 
 La partie que vous attendez sûrement, les petits tips pour créer votre propre moteur. 
-Première chose, lisez du code. Par exemple, n'hésitez pas à regarder l'historique de [mon moteur sur GitHub][r3d-engine]. Cela vous donnera des idées et vous serez plus à même de comprendre là où vous voulez arriver.
+Première chose, observer. Par exemple, n'hésitez pas à regarder l'historique de [mon moteur sur GitHub][r3d-engine]. Le but est de voir où vous voulez aller, d'avoir un modèle. Cela ne passe pas nécessairement par de la lecture de code. Si votre objectif c'est de construire un moteur de rendu similaire à un moteur de jeu, aller voir comment s'organise Unreal ou Unity. Vous pourrez alors découper ce grand projet en petits objectifs ( rendre une scène dynamique, rendre plusieurs objets utilisants des shaders différents, etc. ). Ces objectifs vous guideront dans l'organisation de votre code.
 Deuxième chose, écrivez ce que vous avez compris et vos idées. Sinon vous allez les oublier et ce sera moins clair. Rien n'est pire que d'avoir compris après des heures de réflexions et d'oublier dix minutes plus tard en se perdant dans l'implémentation.
 Dernière chose, n'abandonnez pas et faites des pauses. Parfois quand vous tournez en rond, c'est juste que vous avez besoin de prendre de la distance par rapport au problème. Le meilleur moyen  pour y arriver est de faire une pause de quelques jours, quelques semaines mêmes sur un projet.
 
