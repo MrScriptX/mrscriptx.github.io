@@ -17,7 +17,9 @@ J'aurais pu suivre un bête tutoriel pour construire mon moteur. Mais je pense q
 
 La partie que vous attendez sûrement, les petits tips pour créer votre propre moteur. 
 Première chose, observer. Par exemple, n'hésitez pas à regarder l'historique de [mon moteur sur GitHub][r3d-engine]. Le but est de voir où vous voulez aller, d'avoir un modèle. Cela ne passe pas nécessairement par de la lecture de code. Si votre objectif c'est de construire un moteur de rendu similaire à un moteur de jeu, aller voir comment s'organise Unreal ou Unity. Vous pourrez alors découper ce grand projet en petits objectifs ( rendre une scène dynamique, rendre plusieurs objets utilisants des shaders différents, etc. ). Ces objectifs vous guideront dans l'organisation de votre code.
+
 Deuxième chose, écrivez ce que vous avez compris et vos idées. Sinon vous allez les oublier et ce sera moins clair. Rien n'est pire que d'avoir compris après des heures de réflexions et d'oublier dix minutes plus tard en se perdant dans l'implémentation.
+
 Dernière chose, n'abandonnez pas et faites des pauses. Parfois quand vous tournez en rond, c'est juste que vous avez besoin de prendre de la distance par rapport au problème. Le meilleur moyen  pour y arriver est de faire une pause de quelques jours, quelques semaines mêmes sur un projet.
 
 [r3d-engine]: https://github.com/MrScriptX/R3D_Engine
