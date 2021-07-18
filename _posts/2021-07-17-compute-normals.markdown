@@ -184,7 +184,7 @@ Dans le cas d'un hard shading, on va simplement utiliser des indices différents
 
 J'espère vous avoir appris de nouvelles choses. Je ferais probablement d'autres posts sur l'éclairage, car il y a très peu de ressources en français et encore moins qui sont spécifiques à une implémentation avec Vulkan. Je vous mets en lien mon moteur de rendu pour que vous puissiez avoir un exemple d'application, ainsi que quelques sources qui m'ont aidé à naviguer vers cette solution. Sur ce, portez-vous bien et à la prochaine.
 
-[Code source R3DEngine](https://github.com/MrScriptX/R3D_Engine)
-[Introduction to Shading](https://www.scratchapixel.com/lessons/3d-basic-rendering/introduction-to-shading/shading-normals)
-[Basic Lighting](https://learnopengl.com/Lighting/Basic-Lighting)
-[Calculating normals in a triangle mesh](https://stackoverflow.com/questions/6656358/calculating-normals-in-a-triangle-mesh/6661242#6661242)
+[Code source R3DEngine](https://github.com/MrScriptX/R3D_Engine)  
+[Introduction to Shading](https://www.scratchapixel.com/lessons/3d-basic-rendering/introduction-to-shading/shading-normals)  
+[Basic Lighting](https://learnopengl.com/Lighting/Basic-Lighting)  
+[Calculating normals in a triangle mesh](https://stackoverflow.com/questions/6656358/calculating-normals-in-a-triangle-mesh/6661242#6661242)  
