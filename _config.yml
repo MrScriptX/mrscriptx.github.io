@@ -18,9 +18,9 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Le Domaine de Script
+title: Le Domaine
 description: >- # this means to ignore newlines until "baseurl:"
-  Étudiant en école d’ingénieur, je considère que l'intelligence est avant tout la volonté et le plaisir d'apprendre.
+  J'explore les émotions, le monde, la société. C'est un long voyage que je souhaite partager.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
