@@ -7,6 +7,13 @@ layout: default
     <h1 class="page-heading">{{ page.title }}</h1>
   {%- endif -%}
 
+  {%- for page in site.pages -%}
+    {%- if page.name == "about.markdown" -%}
+      <h2>{{ page.title }}</h2>
+      {{ page.excerpt }}
+    {%- endif -%}
+  {%- endfor -%}
+
   {{ content }}
 
 
@@ -16,7 +23,7 @@ layout: default
     {% assign posts = site.posts %}
   {% endif %}
 
-
+  <h2>Dernières Actualités</h2>
   {%- if posts.size > 0 -%}
     {%- if page.list_title -%}
       <h2 class="post-list-heading">{{ page.list_title }}</h2>

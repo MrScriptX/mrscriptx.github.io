@@ -24,6 +24,8 @@ description: >- # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
+excerpt_separator: <!--more-->
+
 author:
   name: Dan Liebault
   email: dan.liebault@viacesi.fr
@@ -31,6 +33,8 @@ author:
 
 minima:
   social_links:
+    youtube: mrscriptx
+    instagram: r3dc0de
     twitter: MrScriptX
     github: MrScriptX
     linkedin:
