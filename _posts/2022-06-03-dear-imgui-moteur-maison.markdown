@@ -11,6 +11,8 @@ Dernièrement, j'étais coincé sur un problème de fuite de mémoire. Le cauche
 
 Dear ImGui est une bibliothèque très légère et super facile à utiliser permettant d'intégrer une interface à n'importe quel moteur utilisant n'importe quel API. Après quelques galères pour déchiffrer la documentation, j'ai finalement réussi à l'implémenter.
 
+![ImGui dans R3DEngine](/assets/img/2022-06/moving_light.png)
+
 ## Les objets Vulkan
 
 Le plus simple pour intégrer ImGui a son moteur de rendu, c'est de lui créer un pipeline propre.

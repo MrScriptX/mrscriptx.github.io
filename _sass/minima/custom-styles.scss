@@ -16,34 +16,16 @@ section {
     }
 }
 
-#archives {
-    .post-link {
+.post-list {
+    .post-card {
         display: flex;
         flex-direction: column;
-
+    
         margin: 1rem 0;
-
-        a {
-            font-size: 1.4rem;
+    
+        .post-link {
+            font-size: 1.2rem;
             font-weight: bold;
         }
-
-        span {
-            font-size: 0.9rem;
-            color: rgba($color: #000, $alpha: 0.6);
-        }
     }
-}
-
-.post-list li {
-    margin: 0 0;
-
-    h3 {
-        margin: 0;
-    }
-}
-
-.post-link {
-    font-size: 1.2rem;
-    font-weight: bold;
 }
