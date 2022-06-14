@@ -7,6 +7,8 @@ categories: devlog
 
 Dernièrement, j'étais coincé sur un problème de fuite de mémoire. Le cauchemar de tous les développeurs C++. Je me suis vite rendu compte que quand même, ça serait plus simple si j'avais une interface graphique dans mon jeu. Le souci, c'est qu'intégrer une interface, c'est beaucoup de travail. Je devrais démarrer un chantier juste pour trouver cette fuite de mémoire. Non ! Il y a forcement plus simple. Ce plus simple, c'est Dear ImGui.
 
+<!--more-->
+
 Dear ImGui est une bibliothèque très légère et super facile à utiliser permettant d'intégrer une interface à n'importe quel moteur utilisant n'importe quel API. Après quelques galères pour déchiffrer la documentation, j'ai finalement réussi à l'implémenter.
 
 ## Les objets Vulkan

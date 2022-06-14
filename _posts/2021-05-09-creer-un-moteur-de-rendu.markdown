@@ -7,6 +7,8 @@ categories: devlog
 
 Je l'ai fait ! Enfin j'y suis arrivé. Après des centaines d'heures de code et de réflexions. Des pauses de plusieurs mois et des semaines intensives, je peux le dire : j'ai réalisé un moteur de rendu. Le chemin pour y arriver fut très long et très difficile, surtout pour un développeur junior comme moi. Laissez-moi vous raconter cette aventure.
 
+<!--more-->
+
 ## Architecture vous dites ?
 
 Elle commence avec Vulkan et l'excellent tutoriel de [Alexander Overvoorde][vulkan-tut]. Le tutoriel en lui-même est très simple à suivre et en une ou deux semaines, je l'avais terminé. Même si mon code produisait un rendu 3D, on est loin de pouvoir appeler ça "du code" et encore moins "un moteur". En d'autres termes, l'architecture était pourrie. Tout le code se trouvait sur une page organiser en vrac. J'admets que j'étais quand même content : c'était mon hello world 3D. J'ai donc retroussé mes manches et j'ai commencé à découper mon code en fichiers, puis en classes, etc. Au fur et à mesure des changements, je faisais face à des problématiques liées à mon manque de connaissance en infographie. Est-ce que je peux avoir plusieurs pipelines ? Faut-il recréer les commands buffer à chaque game loop ? Faut-il un command buffer par objet ? Et bien d'autres. Des problèmes dont les réponses ne sont pas les plus évidentes à trouver. Et c'est cette partie de questionnement et de recherche qui m'a pris 90% de mon temps. Et les réponses venaient surtout après de longue pause. C'est après des pauses plusieurs semaines que les solutions apparaissaient comme par miracle.

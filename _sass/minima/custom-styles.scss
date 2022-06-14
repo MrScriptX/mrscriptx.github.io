@@ -1,6 +1,21 @@
 // Placeholder to allow defining custom styles that override everything else.
 // (Use `_sass/minima/custom-variables.scss` to override variable defaults)
 
+
+section {
+    margin-bottom: 2rem;
+}
+
+.about-section .content {
+    display: flex;
+    flex-direction: row;
+
+    .pp {
+        width: 200px;
+        margin-right: 1rem;
+    }
+}
+
 #archives {
     .post-link {
         display: flex;
@@ -22,6 +37,10 @@
 
 .post-list li {
     margin: 0 0;
+
+    h3 {
+        margin: 0;
+    }
 }
 
 .post-link {

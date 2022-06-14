@@ -7,11 +7,14 @@ layout: default
         <h1 class="page-heading">{{ page.title }}</h1>
     {%- endif -%}
 
-    <section>
+    <section class="about-section">
         {%- for page in site.pages -%}
             {%- if page.name == "about.markdown" -%}
                 <h2>{{ page.title }}</h2>
-                <p>{{ page.excerpt }} <a href="{{ page.url | relative_url }}">plus...</a></p>
+                <div class="content">
+                    <img class="pp" alt="photo" src="{{ site.url }}/assets/img/profil_pic.jpg" />
+                    <p>{{ page.excerpt }} <a href="{{ page.url | relative_url }}">plus...</a></p>
+                </div>
             {%- endif -%}
         {%- endfor -%}
     </section>
@@ -36,9 +39,7 @@ layout: default
                 {%- for post in posts -%}
                     <li>
                         <span class="post-meta">{{ post.date | date: date_format }}</span>
-                        <h3>
-                            <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-                        </h3>
+                        <h3><a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h3>
                         {%- if site.show_excerpts -%}
                             {{ post.excerpt }}
                         {%- endif -%}
