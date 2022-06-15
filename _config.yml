@@ -22,7 +22,7 @@ title: Le Domaine
 description: >- # this means to ignore newlines until "baseurl:"
   J'explore les émotions, le monde, la société. C'est un long voyage que je souhaite partager.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://mrscriptx.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
 excerpt_separator: <!--more-->
 
@@ -50,6 +50,9 @@ plugins:
   - jekyll-feed
 
 google_analytics: G-TZZMBNM68G
+
+disqus:
+  shortname: mrscriptxblog
 
 # Exclude from processing.
 # The following items will not be processed, by default.
