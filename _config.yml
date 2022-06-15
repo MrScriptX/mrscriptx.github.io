@@ -32,6 +32,7 @@ author:
 
 
 minima:
+  skin: classic
   social_links:
     youtube: mrscriptx
     instagram: r3dc0de
