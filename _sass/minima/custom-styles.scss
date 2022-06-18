@@ -1,20 +1,36 @@
 // Placeholder to allow defining custom styles that override everything else.
 // (Use `_sass/minima/custom-variables.scss` to override variable defaults)
 
-#archives {
-    .post-link {
+
+section {
+    margin-bottom: 2rem;
+}
+
+.about-section .content {
+    display: flex;
+    flex-direction: row;
+
+    .pp {
+        width: 200px;
+        margin-right: 1rem;
+    }
+}
+
+.post-list {
+    .post-card {
         display: flex;
         flex-direction: column;
-
+    
         margin: 1rem 0;
-
-        a {
-            font-size: 1.4rem;
-        }
-
-        span {
-            font-size: 0.9rem;
-            color: rgba($color: #000, $alpha: 0.6);
+    
+        .post-link {
+            font-size: 1.2rem;
+            font-weight: bold;
         }
     }
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
 }

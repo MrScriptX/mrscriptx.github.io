@@ -7,7 +7,11 @@ categories: devlog
 
 Dernièrement, j'étais coincé sur un problème de fuite de mémoire. Le cauchemar de tous les développeurs C++. Je me suis vite rendu compte que quand même, ça serait plus simple si j'avais une interface graphique dans mon jeu. Le souci, c'est qu'intégrer une interface, c'est beaucoup de travail. Je devrais démarrer un chantier juste pour trouver cette fuite de mémoire. Non ! Il y a forcement plus simple. Ce plus simple, c'est Dear ImGui.
 
+<!--more-->
+
 Dear ImGui est une bibliothèque très légère et super facile à utiliser permettant d'intégrer une interface à n'importe quel moteur utilisant n'importe quel API. Après quelques galères pour déchiffrer la documentation, j'ai finalement réussi à l'implémenter.
+
+![ImGui dans R3DEngine](/assets/img/2022-06/moving_light.png)
 
 ## Les objets Vulkan
 
@@ -22,7 +26,7 @@ Ce qui signifie qu'il lui faut des objets Vulkan propres.
 
 Ce qui nous donne au final ceci.
 
-```
+{% highlight c++ %}
 struct UIVulkanObject
 {
     VkCommandPool command_pool;
@@ -31,7 +35,7 @@ struct UIVulkanObject
     VkRenderPass render_pass;
     VkDescriptorPool decriptor_pool = VK_NULL_HANDLE;
 }
-```
+{% endhighlight %}
 
 Bon, vous allez me dire, tu es bien gentil avec ta structure. Mais on initialise ça où ? Ne vous inquiétez pas, c'est très simple. 
 Initialiser ces objets en même temps que ceux d'origine.
@@ -40,7 +44,7 @@ La subtilité c'est qu'il y a un peu de travail supplémentaire concernant l'ini
 
 Le descriptor pool va être bien plus grand.
 
-```
+{% highlight c++ %}
 std::array<VkDescriptorPoolSize, 11> pool_sizes = {};
 pool_sizes[0].type = VK_DESCRIPTOR_TYPE_SAMPLER;
 pool_sizes[0].descriptorCount = 1000;
@@ -75,13 +79,13 @@ if (vkCreateDescriptorPool(m_graphic.device, &pool_info, nullptr, &m_ui.decripto
 {
 	throw std::runtime_error("failed to create descriptor pool!");
 }
-```
+{% endhighlight %}
 
 Le render pass va changer également, car c'est celui d'ImGui qui va être présenté en dernier. 
 Donc il faut mettre à jour tout les render pass en conséquence. 
 À savoir, il ne faut pas oublier de mettre le color attachment du render pass de notre moteur à VK_IMAGE_LAYOUT_COLOR_ATTACHMENT_OPTIMAL et non plus VK_IMAGE_LAYOUT_PRESENT_SRC_KHR.
 
-```
+{% highlight c++ %}
 // render pass ImGui
 VkAttachmentDescription attachment = {};
 attachment.format = m_graphic.swapchain_details.format;
@@ -122,24 +126,23 @@ if (vkCreateRenderPass(m_graphic.device, &info, nullptr, &m_ui.render_pass) != V
 {
 	throw std::runtime_error("Could not create Dear ImGui's render pass");
 }
-```
+{% endhighlight %}
 
 ## Initialisation d'ImGui
 
 Après avoir créé tous vos objets, il faut initialiser ImGui.
 
-```
+{% highlight c++ %}
 // create render pass, command pool, allocate command buffer, etc...
-
 IMGUI_CHECKVERSION();
 ImGui::CreateContext();
 ImGuiIO& io = ImGui::GetIO();
 (void)io;
-```
+{% endhighlight %}
 
 Ensuite il faut fournir à ImGui les objets Vulkan dont il aura besoin.
 
-```
+{% highlight c++ %}
 ImGui_ImplGlfw_InitForVulkan(&window, true); // handle à la GLFWwindow déjà instancié
 ImGui_ImplVulkan_InitInfo init_info = {};
 init_info.Instance = m_graphic.instance;
@@ -154,23 +157,23 @@ init_info.MinImageCount = m_graphic.swapchain_images.size();
 init_info.ImageCount = m_graphic.framebuffers.size();
 init_info.CheckVkResultFn = nullptr;
 ImGui_ImplVulkan_Init(&init_info, m_ui.render_pass);
-```
+{% endhighlight %}
 
 Pour finir, il faut uploader les textures vers le GPU. Pour cela, on va créer un command buffer, puis le désallouer dans la fouler. Pas besoin de faire un objet global pour cela, il ne servira plus.
 
-```
+{% highlight c++ %}
 VkCommandBuffer command_buffer = beginCommands();
 ImGui_ImplVulkan_CreateFontsTexture(command_buffer);
 endCommands(command_buffer);
 ImGui_ImplVulkan_DestroyFontUploadObjects();
-```
+{% endhighlight %}
 
 ## Le rendu
 
 Voilà nous avons fini la préparation, maintenant, nous allons enregistrer les commandes dans les commands buffers dédiés à ImGui. 
 Pour cela, il suffit de faire une fonction que nous appellerons dans notre update juste après avoir enregistré nos commands buffers pour le rendu classique.
 
-```
+{% highlight c++ %}
 void Renderer::UpdateUI()
 {
 	VkCommandBufferBeginInfo cmdBufferBegin = {};
@@ -205,20 +208,20 @@ void Renderer::UpdateUI()
 		throw std::runtime_error("Failed to record command buffers!");
 	}
 }
-```
+{% endhighlight %}
 
 Plus qu'à afficher en mettant à jour notre VkSubmitInfo.
 
-```
+{% highlight c++ %}
 // on passe les deux commands buffers ensemble
 std::array<VkCommandBuffer, 2> command_buffers = { m_graphic.command_buffers[m_current_image], m_ui.command_buffers[m_current_image] };
 submit_info.commandBufferCount = command_buffers.size();
 submit_info.pCommandBuffers = command_buffers.data();
-```
+{% endhighlight %}
 
 Ensuite on peut dessiner en appelant les fonctions d'ImGui. Ce qui nous donne le workflow final suivant :
 
-```
+{% highlight c++ %}
 // on dessine une fenetre
 ImGui_ImplVulkan_NewFrame();
 ImGui_ImplGlfw_NewFrame();
@@ -232,7 +235,7 @@ ImGui::Render();
 mp_renderer->UpdateGame(); // on enregistre les commands buffers du jeu
 mp_renderer->UpdateUI(); // on enregistre les commands buffers ImGui
 mp_renderer->draw(); // on submit le tout à la VkQueue
-```
+{% endhighlight %}
 
 ## Les inputs
 
@@ -242,13 +245,13 @@ La raison est simple. ImGui ne sait pas où se trouve votre souris, il faut lui 
 
 Dans votre callback qui gère votre souris. Passer la position de votre souris aux fonctions d'ImGui.
 
-```
+{% highlight c++ %}
 void Window::mouse_callback(GLFWwindow* window, double xpos, double ypos)
 {
 	ImGuiIO& io = ImGui::GetIO();
 	io.MousePos = ImVec2(xpos, ypos);
 }
-```
+{% endhighlight %}
 
 Et voilà, tout est prêt !
 

@@ -1,0 +1,14 @@
+---
+layout: page
+---
+
+<div id="archives">
+    <ul class="post-list">
+        {% for post in site.categories[page.filter] %}
+            <li class="post-card">
+                <span class="post-meta">{{ post.date | date_to_string }}</span>
+                <a class="post-link" href="{{ post.url }}">{{ post.title }}</a>
+            </li>
+        {% endfor %}
+    </ul>
+</div>
