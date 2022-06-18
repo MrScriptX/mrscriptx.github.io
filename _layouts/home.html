@@ -7,6 +7,8 @@ layout: default
         <h1 class="page-heading">{{ page.title }}</h1>
     {%- endif -%}
 
+    {{ content }}
+
     <section class="about-section">
         {%- for page in site.pages -%}
             {%- if page.name == "about.markdown" -%}
@@ -21,8 +23,6 @@ layout: default
             {%- endif -%}
         {%- endfor -%}
     </section>
-
-    {{ content }}
 
     <section>
         {% if site.paginate %}

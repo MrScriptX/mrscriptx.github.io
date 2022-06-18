@@ -95,3 +95,32 @@ section {
         }
     }
 }
+
+// PAGE
+.page-content {
+    padding: 0;
+
+    .banner {
+        height: 15rem;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .banner-label {
+            color: #fff;
+            font-family: 'Open Sans', arial, sans-serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+
+            text-shadow: 1px 1px 4px rgba($color: #000, $alpha: 0.4);
+        }
+    }
+
+    .wrapper {
+        padding: 30px 30px;
+    }
+}

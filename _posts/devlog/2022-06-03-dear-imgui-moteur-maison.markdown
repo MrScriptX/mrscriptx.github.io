@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Integrer Dear ImGui dans un moteur de rendu"
+title:  "Intégrer Dear ImGui dans un moteur de rendu"
 date:   2022-06-03 12:00:00 +0100
 categories: devlog
 ---
