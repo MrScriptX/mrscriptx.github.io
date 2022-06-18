@@ -6,16 +6,6 @@ section {
     margin-bottom: 2rem;
 }
 
-.about-section .content {
-    display: flex;
-    flex-direction: row;
-
-    .pp {
-        width: 200px;
-        margin-right: 1rem;
-    }
-}
-
 .post-list {
     .post-card {
         display: flex;
@@ -122,5 +112,17 @@ section {
 
     .wrapper {
         padding: 30px 30px;
+    }
+}
+
+// HOME PAGE
+.about-section .content {
+    display: flex;
+    flex-direction: row;
+
+    .pp {
+        width: 200px;
+        margin-right: 1rem;
+        border-radius: 10rem;
     }
 }
