@@ -13,7 +13,10 @@ layout: default
                 <h2>{{ page.title }}</h2>
                 <div class="content">
                     <img class="pp" alt="photo" src="{{ site.url }}/assets/img/profil_pic.jpg" />
-                    <p>{{ page.excerpt }} <a href="{{ page.url | relative_url }}">plus...</a></p>
+                    <article>
+                        {{ page.excerpt }}
+                        <a href="{{ page.url | relative_url }}">Plus...</a>
+                    </article>
                 </div>
             {%- endif -%}
         {%- endfor -%}
