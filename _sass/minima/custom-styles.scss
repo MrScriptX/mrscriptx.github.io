@@ -34,3 +34,65 @@ section {
     display: flex;
     justify-content: center;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+
+.site-title {
+    color: #000;
+    //font-weight: 500;
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+// MAIN NAV
+.site-nav {
+    .trigger {
+        margin: 0px auto 0; 
+        padding: 0; 
+        
+        display: table;
+
+        list-style: none; 
+        text-align: center;
+
+        li { 
+            display: table-cell; 
+            position: relative; 
+        }
+
+        .page-link {
+            color: #000;
+            font-size: 0.8rem;
+            font-family: 'Open Sans', arial, sans-serif;
+            font-weight: 700;
+            text-transform: uppercase;
+            text-decoration: none;
+            letter-spacing: 0.15em;
+  
+            display: inline-block;
+            padding: 0 0; // underline pos
+            margin: 5px 20px;
+            position: relative;
+
+            &:after {    
+                background: none repeat scroll 0 0 transparent;
+                bottom: 0;
+                content: "";
+                display: block;
+                height: 2px;
+                left: 50%;
+                position: absolute;
+                background: $color;
+                transition: width 0.3s ease 0s, left 0.3s ease 0s;
+                width: 0;
+            }
+
+            &:hover:after { 
+                width: 100%; 
+                left: 0; 
+            }
+        }
+    }
+}
