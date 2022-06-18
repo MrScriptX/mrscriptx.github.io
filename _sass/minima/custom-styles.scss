@@ -1,19 +1,16 @@
 // Placeholder to allow defining custom styles that override everything else.
 // (Use `_sass/minima/custom-variables.scss` to override variable defaults)
 
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+
+h2 {
+    font-family: 'Open Sans', arial, sans-serif;
+
+    color: rgba($color: #000000, $alpha: 0.4);
+}
 
 section {
     margin-bottom: 2rem;
-}
-
-.about-section .content {
-    display: flex;
-    flex-direction: row;
-
-    .pp {
-        width: 200px;
-        margin-right: 1rem;
-    }
 }
 
 .post-list {
@@ -23,9 +20,30 @@ section {
     
         margin: 1rem 0;
     
+        .post-meta {
+            font-weight: 500;
+            color: rgba($color, $alpha: 0.6);
+        }
+
         .post-link {
-            font-size: 1.2rem;
+            width: fit-content;
+
+            font-size: 1rem;
             font-weight: bold;
+            font-family: 'Open Sans', arial, sans-serif;
+
+            color: $dark;
+            transition: color 0.3s ease-in-out;
+            transition: letter-spacing 0.4s ease-in-out;
+
+            &:visited {
+                color: $darker;
+            }
+
+            &:hover {
+                color: $color;
+                letter-spacing: 0.15em;
+            }
         }
     }
 }
@@ -33,4 +51,104 @@ section {
 .flex-center {
     display: flex;
     justify-content: center;
+}
+
+.site-title {
+    color: #000;
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+// MAIN NAV
+.site-nav {
+    .trigger {
+        margin: 0px auto 0; 
+        padding: 0; 
+        
+        display: table;
+
+        list-style: none; 
+        text-align: center;
+
+        li { 
+            display: table-cell; 
+            position: relative; 
+        }
+
+        .page-link {
+            color: #000;
+            font-size: 0.8rem;
+            font-family: 'Open Sans', arial, sans-serif;
+            font-weight: 700;
+            text-transform: uppercase;
+            text-decoration: none;
+            letter-spacing: 0.15em;
+  
+            display: inline-block;
+            padding: 0 0; // underline pos
+            margin: 5px 20px;
+            position: relative;
+
+            &:after {    
+                background: none repeat scroll 0 0 transparent;
+                bottom: 0;
+                content: "";
+                display: block;
+                height: 2px;
+                left: 50%;
+                position: absolute;
+                background: $color;
+                transition: width 0.3s ease 0s, left 0.3s ease 0s;
+                width: 0;
+            }
+
+            &:hover:after { 
+                width: 100%; 
+                left: 0; 
+            }
+        }
+    }
+}
+
+// PAGE
+.page-content {
+    padding: 0;
+
+    .banner {
+        height: 15rem;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .banner-label {
+            color: #fff;
+            font-family: 'Open Sans', arial, sans-serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+
+            text-shadow: 1px 1px 4px rgba($color: #000, $alpha: 0.4);
+        }
+    }
+
+    .wrapper {
+        padding: 30px 30px;
+    }
+}
+
+// HOME PAGE
+.about-section .content {
+    display: flex;
+    flex-direction: row;
+
+    .pp {
+        width: 200px;
+        margin-right: 1rem;
+        border-radius: 10rem;
+    }
 }

@@ -7,19 +7,22 @@ layout: default
         <h1 class="page-heading">{{ page.title }}</h1>
     {%- endif -%}
 
+    {{ content }}
+
     <section class="about-section">
         {%- for page in site.pages -%}
             {%- if page.name == "about.markdown" -%}
                 <h2>{{ page.title }}</h2>
                 <div class="content">
                     <img class="pp" alt="photo" src="{{ site.url }}/assets/img/profil_pic.jpg" />
-                    <p>{{ page.excerpt }} <a href="{{ page.url | relative_url }}">plus...</a></p>
+                    <article>
+                        {{ page.excerpt }}
+                        <a href="{{ page.url | relative_url }}">Plus...</a>
+                    </article>
                 </div>
             {%- endif -%}
         {%- endfor -%}
     </section>
-
-    {{ content }}
 
     <section>
         {% if site.paginate %}

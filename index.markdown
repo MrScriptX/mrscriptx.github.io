@@ -3,4 +3,6 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: home
+banner: /assets/img/thomas-stoop-thomasstoop-stroll.jpg
+label: Bienvenue
 ---
