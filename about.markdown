@@ -13,5 +13,5 @@ Bon voyage,
 *Dan "R3D" Liebault*
 
 <div class="flex-center">
-    <img alt="photo de profil" src="{{ site.url }}/assets/img/profil_pic.jpg" width="200" />
+    <img alt="photo de profil" src="{{ site.url }}/assets/img/profil_pic.jpg" width="200" style="border-radius: 10rem" />
 </div>

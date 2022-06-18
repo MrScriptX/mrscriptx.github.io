@@ -1,6 +1,13 @@
 // Placeholder to allow defining custom styles that override everything else.
 // (Use `_sass/minima/custom-variables.scss` to override variable defaults)
 
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+
+h2 {
+    font-family: 'Open Sans', arial, sans-serif;
+
+    color: rgba($color: #000000, $alpha: 0.4);
+}
 
 section {
     margin-bottom: 2rem;
@@ -13,9 +20,30 @@ section {
     
         margin: 1rem 0;
     
+        .post-meta {
+            font-weight: 500;
+            color: rgba($color, $alpha: 0.6);
+        }
+
         .post-link {
-            font-size: 1.2rem;
+            width: fit-content;
+
+            font-size: 1rem;
             font-weight: bold;
+            font-family: 'Open Sans', arial, sans-serif;
+
+            color: $dark;
+            transition: color 0.3s ease-in-out;
+            transition: letter-spacing 0.4s ease-in-out;
+
+            &:visited {
+                color: $darker;
+            }
+
+            &:hover {
+                color: $color;
+                letter-spacing: 0.15em;
+            }
         }
     }
 }
@@ -24,8 +52,6 @@ section {
     display: flex;
     justify-content: center;
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
 
 .site-title {
     color: #000;
