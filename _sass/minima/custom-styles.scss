@@ -34,7 +34,7 @@ section {
 
             color: $dark;
             transition: color 0.3s ease-in-out;
-            transition: letter-spacing 0.4s ease-in-out;
+            transition:  padding-left 0.4s ease-in-out;
 
             &:visited {
                 color: $darker;
@@ -42,7 +42,7 @@ section {
 
             &:hover {
                 color: $color;
-                letter-spacing: 0.15em;
+                padding-left: 2rem;
             }
         }
     }
