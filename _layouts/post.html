@@ -8,7 +8,9 @@ comments: true
   <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
   <header class="post-header">
+    {%- unless page.label -%}
     <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
+    {%- endunless -%}
     <p class="post-meta">
       {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
       <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
