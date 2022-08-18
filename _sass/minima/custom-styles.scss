@@ -148,7 +148,41 @@ section {
 
     .pp {
         width: 200px;
+        height: 200px;
         margin-right: 1rem;
         border-radius: 10rem;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .about-section .content {
+        flex-direction: column;
+
+        align-items: center;
+    }
+}
+
+// ARTWORK PAGE
+#artworks {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 10vw);
+    grid-gap: 5px;
+
+    figure {
+        margin: 0;
+    }
+
+    .gallery_img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    } 
+    
+    .gallery_item--1 {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 4;
     }
 }
