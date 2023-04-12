@@ -12,10 +12,12 @@ Hé bien, ce n'est pas pour rien. Commençons par le début, qu'est-ce que "les 
 
 ## Une histoire d'antiquité
 
-L'utilisation du pluriel nous vient de l'âge antique. En effet, les mathématiques étaient divisées en quatre arts distincts
-: l'arithmétique, la géométrie, l'astronomie et la musique. Alors, vous l'aurez sûrement compris, aujourd'hui, on ne classe
+L'utilisation du pluriel nous vient de l'âge antique. En effet, les mathématiques étaient divisées en quatre arts distincts:
+l'arithmétique, la géométrie, l'astronomie et la musique. Alors, vous l'aurez sûrement compris, aujourd'hui, on ne classe
 plus certains de ses arts dans la catégorie des mathématiques, néanmoins, ce n'est pas pour cela que le singulier est utilisé
 aujourd'hui.
+
+![Les sept arts libéraux par Francesco Pesellino](/assets/img/2023-04/die_sieben_freien_kuenste.jpg)
 
 C'est un peu complexe, et nous y reviendrons très sûrement, mais globalement, la petite guerre de chapelle (parce qu’à un moment,
 faut se l'avouer, c'est juste une guerre d'ego) entre l'utilisation du pluriel ou du singulier vient du fait qu'il y a eu
@@ -40,6 +42,8 @@ Oui, c'est très bête. Mais ça peut aller très loin aussi. Souvent, c'est ce 
 mais que les adultes détestent parce que ça part dans tous les sens avec des formules et des théorèmes à n'en plus finir. Puis quand
 on est en 2 dimensions, c'est facile. En 3 dimensions, ça se complexifie un peu. Mais dès qu'on part sur 4, 5, 6 ou 7, alors là, rien
 ne va plus.
+
+![The map of mathematics](/assets/img/2023-04/the_map_of_mathematics.jpg)
 
 ### Les probabilités
 
