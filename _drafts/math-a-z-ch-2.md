@@ -5,51 +5,38 @@ date:   2023-04-05 12:00:00 +0100
 categories: devlog
 ---
 
-A la base de toute les mathématiques, nous avons les chiffres et les nombres. Sujet qui tiens plus de l'histoire du langage que des sciences dure en elle-même. Cependant, des petits malins ont quand même trouvé le moyen de faire des recherches dessus.
+À la base de toutes les mathématiques, nous avons les chiffres et les nombres. Sujet qui tient plus de l'histoire du langage que des sciences dures en elle-même. Cependant, des petits malins ont quand même trouvé le moyen de faire des recherches dessus.
 
 <!--more-->
 
-Au cours de l'histoire, ils ont évolués de maniere assez grossiere. Nous avons même le droit a des inventions. En réalité, notre système numérique moderne est la consecration d'un long cheminement. Aux origines, les chiffres sont une problèmatique de gestion. Le besoin de representer des distances et des quantités va amener, avec l'apparition du langage, l'apparition de symbols pour representer ces concepts. Ce sont les chiffres.
+Au cours de l'histoire, ils ont évolué de manière assez grossière. Nous avons même le droit à des inventions. En réalité, notre système numérique moderne est la consécration d'un long cheminement. Aux origines, les chiffres sont une problématique de gestion. Le besoin de représenter des distances et des quantités va amener, avec l'apparition du langage, l'apparition de symbole pour représenter ces concepts. Ce sont les chiffres.
 
 ## Les batons, c'est pas pratique
 
-Prenons le fruit préférer d'un feu président, les pommes. Maintenant, vous voulez écrire que vous avez trois pommes. Pour une pomme nous avons un baton. Donc pour representé trois pommes, on dessine trois batons. Ici, les batons representent des pommes. Mais ils peuvent tout aussi bien representé de l'argent, des bananes, des moutons. Simple efficace, vous venez d'inventer un système numérique. Le baton est ce qu'on appel un chiffre. Il est symbole qui permet de representé une valeur. Grace aux chiffres vous pouvez representer des nombres, c'est à dire des valeurs. Maintenant, ce petit système numérique est un sytème très basique. Je vous laisse representé le nombre 100 avec des batons.
+Prenons le fruit préféré d'un feu président, les pommes. Maintenant, vous voulez écrire que vous avez trois pommes. Pour une pomme nous avons un bâton. Donc pour représenter trois pommes, on dessine trois bâtons. Ici, les bâtons représentent des pommes. Mais ils peuvent tout aussi bien représenter de l'argent, des bananes, des moutons. Simple, efficace, vous venez d'inventer un système numérique. Le bâton est ce qu'on appelle un chiffre. Il est un symbole qui permet de représenter une valeur. Grâce aux chiffres vous pouvez représenter des nombres, c'est-à-dire des valeurs. Maintenant, ce petit système numérique est un système très basique. Je vous laisse représenter le nombre 100 avec des bâtons.
 
-Des qu'il s'agit de representer des nombres plus grand ou des choses plus complexes, vous en conviendrez, ce n'est pas top. On va preferer notre systeme. Le système décimal qui utilise les chiffres arabes (1, 2, 3, 4, 5, 6, 7, 8, 9). Comprenez bien qu'il ne s'agit que de symbole representant des "valeurs".
+Dès qu'il s'agit de représenter des nombres plus grands ou des choses plus complexes, vous en conviendrez, ce n'est pas top. On va préférer notre système. Le système décimal qui utilise les chiffres arabes (1, 2, 3, 4, 5, 6, 7, 8, 9). Comprenez bien qu'il ne s'agit que de symbole représentant des "valeurs" que nous organisons de manière à représenter toutes les valeurs possibles. Nous avons donc dix symboles, si nous incluons le 0.
 
-Nous avons 10 symboles, si nous incluons le 0. Fait important et notable dans ce systeme d'écriture, la position du symboles influt sur sa valeur. Exemple : `1` représente une unité. Mais dans le nombre `12`, le `1` represente dix unités. Cela est importants car il est valable pour tout les systemes dit systeme arithmétique positionel (les systemes les plus utilsés aujourd'hui). Oui, je dis bien tous, car utilisé 10 symboles, ça n'a pas toujours été la norme. Les summeriens utilisaient un systeme numérique sur une base de 60. Systeme que nous avons encore aujourd'hui. Et ça tombe bien, je vais pouvoir l'utiliser pour vous expliqué ce qu'est une base de nombre.
+On remarquera que dans ce système d'écriture, la position du symbole influe sur sa valeur. Exemple : `1` représente une unité. Mais dans le nombre `12`, le `1` représente dix unités. Cela est important, car il est valable pour tous les systèmes dits système arithmétique positionnel (les systèmes les plus utilisés aujourd'hui). Oui, je dis bien tous, car utilisé 10 symboles, ça n'a pas toujours été la norme. Les Sumériens utilisaient un système numérique sur une base de 60. Système que nous avons encore aujourd'hui. Et ça tombe bien, je vais pouvoir l'utiliser pour vous expliquer ce qu'est une base de nombre.
 
 ## Le temps est étrange
 
-Vous l'aurez compris, il n'existe pas qu'une seule manière de compter. D'ailleurs, vous en connaissez déjà au moins trois (enfin probablement). La premiere, c'est le systeme en base 10, c'est à dire, 1, 2, 3, 4, etc... Bref la manière que vous utilisez tout les jours, tout le temps, pour tout. La deuxieme c'est la maniere de compter des ordinateurs, le binaire. C'est les 0 et les 1 que vous voyez partout des qu'on parle d'informatique à la télé. C'est un systeme en base 2 ou binaire. Il n'utilise que deux symboles `0` et `1`. Et en fonction de la position du symbole sa valeur change. Comme pour notre systeme classique ! Exemple : `1` répresente une unité. Mais dans `10`, le `1` représente deux unités.
+Vous l'aurez compris, il n'existe pas qu'une seule manière de compter. D'ailleurs, vous en connaissez déjà au moins trois (enfin probablement). La première, c'est le système en base 10, c'est-à-dire, 1, 2, 3, 4, etc. Bref, la manière que vous utilisez tous les jours, tout le temps, pour tout. La deuxième c'est la manière de compter des ordinateurs, le binaire. C'est les 0 et les 1 que vous voyez partout dès qu'on parle d'informatique à la télé. C'est un système en base 2 ou binaire. Il n'utilise que deux symboles `0` et `1`. Et en fonction de la position du symbole, sa valeur change. Comme pour notre système classique ! Exemple : `1` représente une unité. Mais dans `10`, le `1` représente deux unités.
 
-Le troisième systeme vous sera plus familier même si, nous n'utilisons pas de symboles à l'écrit. C'est le systeme en base 60. Le système
-utilisé pour lire l'heure. Oui, oui, regarder c'est tres simple : dans 1 minute, il y a... 60 secondes ! Dans 1 heure, 60 minutes.
-On compte de soixante en soixante. (on va ignorer gentillement les millisecondes vous voulez bien). Et ce système tombe pas du ciel. Il existe
-une méthode pour compter de cette manière avec ces mains. C'est pour cela qu'il était utilisé par les Summeriens. (Aussi parce qu'on pouvait
-representé de grand nombre sur un espace reduit).
+Le troisième système vous sera plus familier même si, nous n'utilisons pas de symboles à l'écrit. C'est le système en base 60. Le système utilisé pour lire l'heure. Oui, oui, regarder c'est très simple : dans 1 minute, il y a... 60 secondes ! Dans 1 heure, 60 minutes. On compte de soixante en soixante. (on va ignorer gentiment les millisecondes vous voulez bien). Et ce système ne tombe pas du ciel. Il existe une méthode pour compter de cette manière avec ces mains. C'est pour cela qu'il était utilisé par les Sumériens. (Aussi parce qu'on pouvait représenter de grand nombre sur un espace réduit).
 
-Finalement, la base 10, ce n'est pas forcement ce qu'il y a de plus evident. Aujourd'hui nous l'utilisons comme standard car il permet de representé
-des quantités relativements grande sans prendre un espace considérable, mais garde une simplicité d'utilisation et de lecture. Il y a également une
-part de chance et de coincidence car un systeme en base 12 remplirait tout à fait ces criteres (et on peut utilisé ses doigts pour compté avec également).
+Finalement, la base 10, ce n'est pas forcément ce qu'il y a de plus évident. Aujourd'hui nous l'utilisons comme standard, car il permet de représenter des quantités relativement grandes sans prendre un espace considérable, mais garde une simplicité d'utilisation et de lecture. Il y a également une part de chance et de coïncidence, car un système en base 12 remplirait tout à fait ces critères (et on peut utilisé ses doigts pour compté avec également).
 
 ## Le zero, et les autres...
 
-Pour résumer ce que nous avons appris jusqu'ici, un chiffre est un symbole qui permet de representé une valeur (ou nombre). Ainsi on peut à partir
-d'un systeme de chiffre representé tout les nombres ou presque car il existe des nombres particuliers. Tres particuliers. Par exemple, l'absence de
-valeur. Pour le representé, on fait alors intervenir le zero qui signifie litteralement "abscence". Mais, si j'écris ce chapitre, vous comprendrez
-que ce n'est pas le seul cas. Ainsi, il existe un nombre dont nous verrons la vraie définition une autre fois : pi. Pi est égale à 3.14... et une suite
-infini de chiffre. Pourtant c'est un nombre, mais il est impossible de le representé en utilisant notre seul systeme numerique. On va alors attribué
-a cette valeur tres particuliere un signe, un chiffre à part entiere. Vous le connaissez tous, il a une journée qui lui est dédié, mesdames et messieurs,
-je vous présente $$\pi$$. Ce symbole est également un chiffre et il en existe une multitude car ces symboles permettent de representé rapidement des valeurs sans
-devoir écrire la valeur ou la définition quand on ne peut tout simplement pas. Pour en cité deux autres bien connu : le nombre d'or et l'infini !
+Pour résumer ce que nous avons appris jusqu'ici, un chiffre est un symbole qui permet de représenter une valeur (ou nombre). Ainsi on peut à partir d'un système de chiffre représenter tous les nombres ou presque, car il existe des nombres particuliers. Très particuliers. Par exemple, l'absence de valeur. Pour le représenter, on fait alors intervenir le zéro qui signifie littéralement "abscence". Mais, si j'écris ce chapitre, vous comprendrez que ce n'est pas le seul cas. Ainsi, il existe un nombre dont nous verrons la vraie définition une autre fois : pi. Pi est égale à 3.14... et une suite infinie de chiffre. Pourtant c'est un nombre, mais il est impossible de le représenter en utilisant notre seul système numérique. On va alors attribuer à cette valeur très particulière un signe, un chiffre à part entière. Vous le connaissez tous, il a une journée qui lui est dédiée, mesdames et messieurs, je vous présente $$\pi$$. Ce symbole est également un chiffre et il en existe une multitude, car ces symboles permettent de représenter rapidement des valeurs sans devoir écrire la valeur ou la définition quand on ne peut tout simplement pas. Pour en citer deux autres bien connus : le nombre d'or et l'infini !
 
 ## Ce qu'il faut retenir
 
 Il est temps de faire une petite conclusion. Voici les points importants qu'il faut garder en tête.
 
-- Un chiffre, c'est un symbole qui permet de representé une valeur.
+- Un chiffre, c'est un symbole qui permet de représenter une valeur.
 - Un nombre, c'est une valeur. On l'écrit avec des chiffres.
-- Nous comptons sur une base 10, c'est à dire que dans une unité, il y a 10 sous unité.
-- Il existe d'autre maniere de compté : le binaire l'electronique, la base 60 pour le temps, la base 8 pour le stockage de données.
-- Il existe des chiffres spéciaux pour representé des nombres un peu particulier : $$0$$, $$\pi$$, $$\infty$$.
+- Nous comptons sur une base 10, c'est-à-dire que dans une unité, il y a 10 sous unité.
+- Il existe d'autre manière de compter : le binaire l'électronique, la base 60 pour le temps, la base 8 pour le stockage de données.
+- Il existe des chiffres spéciaux pour représenté des nombres un peu particuliers : $$0$$, $$\pi$$, $$\infty$$.
