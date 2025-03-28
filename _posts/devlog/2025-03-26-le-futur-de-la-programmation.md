@@ -43,8 +43,7 @@ Vous pouvez importer directement des bibliothèques C, sans wrapper absurde, san
 
 Et ce n’est pas tout : Zig embarque son propre package manager, Zon, ainsi qu’un système de build écrit... en Zig !
 Adieu Make, CMake et autres abominations, bonjour à un système qui ne vous donne pas envie de jeter votre PC par la fenêtre.
-(En vrai, il y a un petit temp d'adaptation quand même 😫).
-
+(En vrai, il y a un petit temps d'adaptation quand même 😫).
 ## La gestion mémoire 3.0
 
 Regardons un "Hello, World!" en Zig :
