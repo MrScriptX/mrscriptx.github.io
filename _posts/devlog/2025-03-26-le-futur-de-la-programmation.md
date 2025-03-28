@@ -91,8 +91,7 @@ Autrement dit, il vous permet de mieux gérer vos allocations en fonction de vos
 
 #### Pourquoi tout ce charabia alors que malloc() existe ?
 
-Parce que le vraie GOAT, c’est `defer`.
-
+Parce que le vrai GOAT, c’est `defer`.
 ### Le mot-clé defer, ou comment dire adieu aux fuites mémoire
 
 Le mot-clé `defer`, c’est un petit bijou.
