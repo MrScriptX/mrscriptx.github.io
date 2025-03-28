@@ -115,7 +115,7 @@ Toute la mémoire allouée avec notre allocateur mémoire est libérée d’un c
 Autrement dit, pas besoin de traquer chaque allocation individuellement : il suffit de libérer l’allocateur pour que tout disparaisse proprement.
 Quelle simplicité !
 
-La deuxieme surprise, c'est ce qui vient après le `defer`.
+La deuxième surprise, c'est ce qui vient après le `defer`.
 Toute la mémoire alloué avec notre allocateur mémoire est liberé en liberant notre allocateur.
 Quelle simplicité !
 
