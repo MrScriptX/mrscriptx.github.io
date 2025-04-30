@@ -81,7 +81,7 @@ const Build = std.Build;
 
 pub fn build(b: *Build, target: Build.ResolvedTarget, optimize: std.builtin.OptimizeMode) *Build.Module {
     // we create a new module for the imgui library
-    const module = b.addModule("stb", .{
+    const module = b.addModule("imgui", .{
         .root_source_file = b.path("libs/cimgui/src/root.zig"), // this is the root file of the module
         .target = target,
         .optimize = optimize,
