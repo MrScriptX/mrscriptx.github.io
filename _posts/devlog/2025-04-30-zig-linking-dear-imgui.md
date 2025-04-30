@@ -6,7 +6,7 @@ banner: /assets/img/2025-04/c_programming_language_striked_by_lightning.png
 categories: devlog zig
 ---
 
-I have come to find that apparantly, linking Dear ImGui isn't as straight forward as I thought.
+I have come to find that apparently, linking Dear ImGui isn't as straight forward as I thought.
 While working on my new rendering engine [Z8](https://github.com/MrScriptX/z8), I had to reimplement Dear ImGui.
 I have been using it in C++ for a while now, and I thought it would be easy to just link it in Zig.
 And well, it wasn't too hard really, but I had to figure out a few things along the way.
