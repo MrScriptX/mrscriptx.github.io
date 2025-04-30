@@ -54,7 +54,7 @@ This will generate the bindings in the `generated` folder.
 Now that we have the bindings, we can link them in our Zig project.
 Copy the `generated` folder to your Zig project folder.
 
-I personnaly structure my project like this:
+I personally structure my project like this:
 
 - `project_root`
   - `libs`
@@ -143,7 +143,7 @@ pub fn SliderInt(label: []const u8, v: *i32, v_min: i32, v_max: i32) bool {
     return c.ImGui_SliderInt(@ptrCast(label), v, v_min, v_max);
 }
 
-// import the C functions gain but under the c namespace to use them in Zig
+// import the C functions again but under the c namespace to use them in Zig
 // if you expose all the functions you need, you can even drop the previous import.
 const c = @cImport({
     @cInclude("dcimgui.h");
