@@ -7,16 +7,16 @@ categories: devlog zig
 ---
 
 I have come to find that apparantly, linking Dear ImGui isn't as straight forward as I thought.
-While working on my new rendering engine [Z8](https://github.com/MrScriptX/z8), I wanted to use Dear ImGui for the GUI.
+While working on my new rendering engine [Z8](https://github.com/MrScriptX/z8), I had to reimplement Dear ImGui.
 I have been using it in C++ for a while now, and I thought it would be easy to just link it in Zig.
 And well, it wasn't too hard really, but I had to figure out a few things along the way.
-So here are the sweet little tips I learned along the way.
+So here are the sweet little tips I got from this experience.
 
 ## Building Dear ImGui
 
-First of all, you need to build Dear ImGui.
+First of all, you need to build the Dear ImGui bindings for C.
 
-Instead of using the now well known `cimgui` bindings, we are going to use the official Dear ImGui C bindings: [dear bindings](https://github.com/dearimgui/dear_bindings).
+Instead of using the `cimgui` bindings, we are going to use the official Dear ImGui C bindings: [dear bindings](https://github.com/dearimgui/dear_bindings).
 
 First, clone imgui repository and the dear bindings repository.:
 
@@ -54,7 +54,7 @@ This will generate the bindings in the `generated` folder.
 Now that we have the bindings, we can link them in our Zig project.
 Copy the `generated` folder to your Zig project folder.
 
-I personnaly structure my projects like this:
+I personnaly structure my project like this:
 
 - `project_root`
   - `libs`
@@ -100,11 +100,11 @@ pub fn build(b: *Build, target: Build.ResolvedTarget, optimize: std.builtin.Opti
 }
 ```
 
-For the backends, you have to link to there respective library too and add the include paths.
+For the backends, you have to link their respective library too and add the include paths.
 For example, if you are using SDL3 and Vulkan, you can add the following :
 
 ```zig
-// Add SDL3 and Vulkan include paths
+// Add SDL3 and Vulkan backends
 module.addCSourceFile(.{ .file = b.path("common/imgui/imgui_impl_sdl3.cpp"), .flags = &.{ "" } });
 module.addCSourceFile(.{ .file = b.path("common/imgui/imgui_impl_vulkan.cpp"), .flags = &.{ "" } });
 
@@ -143,7 +143,9 @@ pub fn SliderInt(label: []const u8, v: *i32, v_min: i32, v_max: i32) bool {
     return c.ImGui_SliderInt(@ptrCast(label), v, v_min, v_max);
 }
 
-const c = @cImport({ // import the C functions gain but under the c namespace to use them in Zig
+// import the C functions gain but under the c namespace to use them in Zig
+// if you expose all the functions you need, you can even drop the previous import.
+const c = @cImport({
     @cInclude("dcimgui.h");
     @cInclude("dcimgui_impl_sdl3.h");
     @cInclude("dcimgui_impl_vulkan.h");
