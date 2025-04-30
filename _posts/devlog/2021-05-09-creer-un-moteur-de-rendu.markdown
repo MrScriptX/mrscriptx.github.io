@@ -3,6 +3,7 @@ layout: post
 title:  "Créer un moteur de rendu 3D"
 date:   2021-05-09 22:32:00 +0100
 categories: devlog
+lang: fr
 ---
 
 Je l'ai fait ! Enfin j'y suis arrivé. Après des centaines d'heures de code et de réflexions. Des pauses de plusieurs mois et des semaines intensives, je peux le dire : j'ai réalisé un moteur de rendu. Le chemin pour y arriver fut très long et très difficile, surtout pour un développeur junior comme moi. Laissez-moi vous raconter cette aventure.

@@ -5,4 +5,5 @@
 layout: home
 banner: /assets/img/thomas-stoop-thomasstoop-stroll.jpg
 label: Bienvenue
+lang: fr
 ---

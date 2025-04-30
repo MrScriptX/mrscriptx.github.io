@@ -3,6 +3,7 @@ layout: post
 title:  "Intégrer Dear ImGui dans un moteur de rendu"
 date:   2022-06-03 12:00:00 +0100
 categories: devlog
+lang: fr
 ---
 
 Dernièrement, j'étais coincé sur un problème de fuite de mémoire. Le cauchemar de tous les développeurs C++. Je me suis vite rendu compte que quand même, ça serait plus simple si j'avais une interface graphique dans mon jeu. Le souci, c'est qu'intégrer une interface, c'est beaucoup de travail. Je devrais démarrer un chantier juste pour trouver cette fuite de mémoire. Non ! Il y a forcement plus simple. Ce plus simple, c'est Dear ImGui.

@@ -4,6 +4,7 @@ title: Le futur de la programmation système
 date:   2025-03-28 12:00:00 +0100
 banner: /assets/img/2025-03/the_futur_of_programming.png
 categories: devlog
+lang: fr
 ---
 
 On entend beaucoup parler de Rust ces derniers temps, notamment grâce aux controverses sur son intégration dans le noyau Linux.

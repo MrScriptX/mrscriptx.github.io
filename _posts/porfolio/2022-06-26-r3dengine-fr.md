@@ -1,0 +1,72 @@
+---
+layout: post
+title: R3D Engine
+date:   2022-06-26 12:00:00 +0100
+categories: porfolio
+banner: /assets/img/2022-06/r3d_voxel_wireframe.png
+label: R3D Engine
+lang: fr
+---
+
+R3D Engine est un moteur de rendu 3D développé en C++ et basé sur l’API Vulkan.
+Ce projet me permet d’explorer l’infographie de bas niveau tout en perfectionnant mes compétences en architecture logicielle.
+
+<!--more-->
+
+Le projet est né de ma curiosité grandissante pour le monde du bas niveau et les jeux vidéo, notamment Minecraft.
+Je me suis naturellement orienté vers le C++, mon langage de prédilection.
+J’ai choisi *Vulkan* plutôt qu’OpenGL, car c’était la nouvelle API en vogue à ce moment-là (oui, j’ai pris le hype train 😄).
+
+Le moteur repose sur deux dépendances principales : *Vulkan* pour le rendu graphique et *GLFW* pour la gestion des entrées utilisateur et des fenêtres.
+À cela s’ajoute *Dear ImGui*, qui fournit une interface utilisateur intégrée au moteur.
+Enfin, j’utilise *GLM* pour tout ce qui concerne les calculs matriciels et vectoriels (essentiel dans un moteur 3D 🤓).
+
+## Fonctionnalités actuelles
+
+Actuellement, le moteur permet de créer des scènes dynamiques, soit en instanciant des objets mathématiques, soit en important des fichiers au format *OBJ*.
+Il prend en charge les trois types d’éclairage les plus couramment utilisés dans les jeux vidéo :
+- Éclairage directionnel
+- Éclairage ambiant
+- Points lumineux
+
+Grâce à ce moteur, j’ai pu développer un prototype de jeu, disponible dans le dépôt : [R3D Voxel](https://github.com/MrScriptX/R3DVoxel).
+C’est en répondant aux besoins de ce prototype que j’améliore continuellement le moteur en y intégrant de nouvelles optimisations.
+
+## Le parcours du combattant
+
+J’ai dû entièrement refactoriser le moteur après avoir réalisé que ma première architecture présentait des limitations incompatibles avec mes besoins 😢.
+En étudiant le fonctionnement de moteurs comme *Unity* ou *Unreal Engine*, j’ai pu définir un objectif clair en termes de fonctionnalités et d’architecture.
+
+## Système de build
+
+Au départ, je compilais le projet avec Visual Studio (un grand classique, me direz-vous).
+Mais en découvrant [xmake](xmake-link), j’ai décidé d’adopter cet utilitaire, qui offre plusieurs avantages non négligeables.
+
+Le système de build repose sur Lua, ce qui permet d’éviter les complexités de *CMake* ou de *MSBuild* (encore pire 😅).
+De plus, [xmake](xmake-link) prend en charge la plupart des gestionnaires de paquets C++ (vcpkg, meson, etc.).
+
+## Découvrez mon projet
+
+Le projet est disponible sur [GitHub](https://github.com/MrScriptX/R3D_Engine).
+
+Il existe aussi quelques articles sur mon blog qui vont plus en détail sur la réalisation du projet.
+
+- [Créer un moteur de rendu 3D](/devlog/2021/05/09/creer-un-moteur-de-rendu.html)
+- [Calculer les normales pour l'éclairage](/devlog/2021/07/17/compute-normals.html)
+- [Intégrer Dear ImGui dans un moteur de rendu](/devlog/2022/06/03/dear-imgui-moteur-maison.html)
+
+Vous pouvez également voir une démonstration du moteur !
+Cela se passe sur ma chaîne YouTube 📹.
+
+- [vulkan directional lighting](https://youtu.be/abdZcInc1OI)
+- [Voxel engine terrain generation and optimization](https://youtu.be/pQtwTTGwCJA)
+
+### Screenshots
+
+![Exemple 1](/assets/img/2022-06/moving_light_02.png)
+*Exemple de gestion de la lumière dans R3D Engine*
+
+![R3D Voxel](/assets/img/2022-06/r3d_voxel.png)
+*R3D Voxel dans toute sa splendeur*
+
+[xmake-link]: https://xmake.io/

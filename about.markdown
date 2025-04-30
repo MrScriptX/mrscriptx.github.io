@@ -3,6 +3,7 @@ layout: page
 title: À propos
 permalink: /about/
 excerpt: Vivre c'est voyager. Voyager vers une destination inconnue dans un monde qui regorge d'histoires et de rêves. Avoir bien vécu, c'est avoir une histoire à raconter, une leçon à enseigner, un héritage à transmettre. J'aime apprendre, comprendre et explorer. C'est mon voyage que je vous laisse découvrir si vous le souhaitez.
+lang: fr
 ---
 
 Vivre c'est voyager. Voyager vers une destination inconnue dans un monde qui regorge d'histoires et de rêves. Avoir bien vécu, c'est avoir une histoire à raconter, une leçon à enseigner, un héritage à transmettre. J'aime apprendre, comprendre et explorer. C'est mon voyage que je vous laisse découvrir si vous le souhaitez.

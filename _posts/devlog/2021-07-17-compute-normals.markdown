@@ -3,6 +3,7 @@ layout: post
 title:  "Calculer les normales pour l'éclairage"
 date:   2021-07-17 18:47:00 +0100
 categories: devlog
+lang: fr
 ---
 
 Récemment, je me suis penché sur la question de l'éclairage pour mon moteur de rendu. Qui dit éclairage, dit forcément normales. Calculer des normales en soi n'est pas compliqués, mais selon la méthode de calcul, on se retrouve avec des résultats très différents. Dans un monde parfait, les normales sont fournies par l'artiste à l'origine du modèle 3D. Après tout, il est le seul à savoir comment sa création réagit à la lumière. En revanche, dans le cas d'une création procédurale, c'est un peu plus compliqué.

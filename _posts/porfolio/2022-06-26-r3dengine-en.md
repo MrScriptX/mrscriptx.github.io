@@ -5,6 +5,7 @@ date:   2022-06-26 12:00:00 +0100
 categories: porfolio
 banner: /assets/img/2022-06/r3d_voxel_wireframe.png
 label: R3D Engine
+lang: fr
 ---
 
 R3D Engine est un moteur de rendu 3D développé en C++ et basé sur l’API Vulkan.
