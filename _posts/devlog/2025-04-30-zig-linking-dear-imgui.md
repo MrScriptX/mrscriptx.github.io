@@ -54,7 +54,7 @@ This will generate the bindings in the `generated` folder.
 Now that we have the bindings, we can link them in our Zig project.
 Copy the `generated` folder to your Zig project folder.
 
-I personnaly structure my project like this:
+I personally structure my project like this:
 
 - `project_root`
   - `libs`
