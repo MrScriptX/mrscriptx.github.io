@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Zig : Linking Dear ImGui
-date:   2025-04-29 12:00:00 +0100
-banner: /assets/img/2025-03/the_futur_of_programming.png
+title: Zig - Linking Dear ImGui
+date:   2025-04-30 10:00:00 +0100
+banner: /assets/img/2025-04/c_programming_language_striked_by_lightning.png
 categories: devlog zig
 ---
 
